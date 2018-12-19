@@ -1,21 +1,13 @@
 #!/usr/bin/env python
 # coding=utf-8
-# modifyDate: 20120808 ~ 20120810
-# 原作者为：bones7456, http://li2z.cn/
-# 修改者为：decli@qq.com
-# v1.2，changeLog：
-# +: 文件日期/时间/颜色显示、多线程支持、主页跳转
-# -: 解决不同浏览器下上传文件名乱码问题：仅IE，其它浏览器暂时没处理。
-# -: 一些路径显示的bug，主要是 cgi.escape() 转义问题
-# ?: notepad++ 下直接编译的server路径问题
 
 """
   简介：这是一个 python 写的轻量级的文件共享服务器（基于内置的SimpleHTTPServer模块），
   支持文件上传下载，只要你安装了python（建议版本2.6~2.7，不支持3.x），
   然后去到想要共享的目录下，执行：
-    python SimpleHTTPServerWithUpload.py 1234
-  其中1234为你指定的端口号，如不写，默认为 8080
-  然后访问 http://localhost:1234 即可，localhost 或者 1234 请酌情替换。
+    python SimpleHTTPServerWithUpload.py 9999
+  其中9999为你指定的端口号，如不写，默认为 8080
+  然后访问 http://localhost:9999 即可，localhost 或者 9999 请酌情替换。
 """
 
 """Simple HTTP Server With Upload.
